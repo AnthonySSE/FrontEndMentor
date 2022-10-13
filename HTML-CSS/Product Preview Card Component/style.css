@@ -3,15 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
     display: flex;
-    align-content: center;
+    justify-content: center;
     background-color: hsl(30, 38%, 92%);
+    flex-direction: row;
+    width: 500px;
+    margin:auto;
+    margin-top: 100px;
 }
 
 .panelizquierdo img{
@@ -23,10 +26,49 @@ body{
 .panelderecho{
     background-color: hsl(0, 0%, 100%);
     border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat';
 }
 
-.panelderecho p{
-    display: flex;
-    flex-direction: row;
-    row-gap: 5px;
+.encabezado{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+}
+
+.titulo{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.contenido{
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    word-spacing: 3px;
+    line-height: 15px;
+}
+
+.precioactual{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 22px;
+    padding-right: 10px;
+}
+
+.precioanterior{
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.anadircarrito{
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    padding-right: 10px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px 60px;
 }
